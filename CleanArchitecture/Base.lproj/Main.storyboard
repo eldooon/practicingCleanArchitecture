@@ -489,6 +489,7 @@
                         <outlet property="firstNameTextField" destination="9nv-3m-jGP" id="rqx-tW-nBK"/>
                         <outlet property="lastNameTextField" destination="1as-tv-JJT" id="G92-w0-cBf"/>
                         <outlet property="sameAsShippingSwitch" destination="6Fb-bA-W5m" id="RNN-Hl-oUe"/>
+                        <outlet property="shippingCityTextField" destination="Z1S-2U-PPf" id="Rfl-xM-3IT"/>
                         <outlet property="shippingMethodPicker" destination="c8D-x9-Kcq" id="ENh-Ff-c0o"/>
                         <outlet property="shippingSpeedTextField" destination="qdk-uG-Pcc" id="WAS-Xo-my8"/>
                         <outlet property="shippingStateTextField" destination="uAD-dS-IYc" id="Pro-bW-0BN"/>
