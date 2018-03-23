@@ -70,7 +70,6 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        doSomething()
         configurePickers()
     }
     
@@ -79,12 +78,6 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
     
     //@IBOutlet weak var nameTextField: UITextField!
     
-    func doSomething()
-    {
-        let request = CreateOrder.Something.Request()
-        interactor?.doSomething(request: request)
-    }
-    
     func displaySomething(viewModel: CreateOrder.Something.ViewModel)
     {
         //nameTextField.text = viewModel.name
@@ -92,9 +85,25 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
     
     //Configure Pickers
     func configurePickers () {
-        self.shippingSpeedTextField.inputView = shippingMethodPicker
+        shippingSpeedTextField.inputView = shippingMethodPicker
+        expirationTextField.inputView = expirationDatePicker
     }
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return interactor?.shippingMethods.count ?? 0
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return interactor?.shippingMethods[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        shippingSpeedTextField.text = interactor?.shippingMethods[row]
+    }
     //Textfields
     @IBOutlet var textFields: [UITextField]!
     
@@ -154,13 +163,10 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
     @IBOutlet var expirationDatePicker: UIDatePicker!
     
     @IBAction func expirationDatePickerValueChanged(_ sender: Any) {
+        
+//        let date = expirationDatePicker.date
+//        let request = CreateOrder.FormatExpirationDate.Request(date: date)
+//        interactor?.formatExpirationDate(request)
     }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 1
-    }
 }
