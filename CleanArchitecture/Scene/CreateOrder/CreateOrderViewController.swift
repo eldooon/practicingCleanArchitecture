@@ -72,7 +72,7 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
         configurePickers()
     }
     
-    // Display Order Display Logic
+    // Display Order Logic
     
     func displayExpirationDate(viewModel: CreateOrder.FormatExpirationDate.ViewModel) {
         let date = viewModel.date

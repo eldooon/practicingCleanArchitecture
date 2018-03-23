@@ -574,7 +574,7 @@
                         <outlet property="delegate" destination="EzW-hH-aTt" id="KSH-PX-h8F"/>
                     </connections>
                 </pickerView>
-                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="ol2-VT-3EQ">
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="ol2-VT-3EQ">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <date key="date" timeIntervalSinceReferenceDate="543510663.96599197">
