@@ -12,20 +12,22 @@
 
 import UIKit
 
-enum CreateOrder
-{
-  // MARK: Use cases
-  
-  enum Something
-  {
-    struct Request
-    {
+enum CreateOrder {
+    // MARK: Use cases
+    
+    //Format Expiration Date
+    enum FormatExpirationDate {
+        struct Request {
+            var date: Date
+        }
+        
+        struct Response {
+            var date: Date
+        }
+        
+        struct ViewModel {
+            var date: String
+        }
     }
-    struct Response
-    {
-    }
-    struct ViewModel
-    {
-    }
-  }
+    
 }

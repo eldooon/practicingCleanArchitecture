@@ -12,9 +12,8 @@
 
 import UIKit
 
-protocol CreateOrderDisplayLogic: class
-{
-    func displaySomething(viewModel: CreateOrder.Something.ViewModel)
+protocol CreateOrderDisplayLogic : class {
+    func displayExpirationDate(viewModel: CreateOrder.FormatExpirationDate.ViewModel)
 }
 
 class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate
@@ -73,21 +72,16 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
         configurePickers()
     }
     
-    // MARK: Do something
+    // Display Order Display Logic
     
-    
-    //@IBOutlet weak var nameTextField: UITextField!
-    
-    func displaySomething(viewModel: CreateOrder.Something.ViewModel)
-    {
-        //nameTextField.text = viewModel.name
+    func displayExpirationDate(viewModel: CreateOrder.FormatExpirationDate.ViewModel) {
+        let date = viewModel.date
+        expirationTextField.text = date
     }
     
-    //Configure Pickers
-    func configurePickers () {
-        shippingSpeedTextField.inputView = shippingMethodPicker
-        expirationTextField.inputView = expirationDatePicker
-    }
+    //Configure Shipping Pickers
+    
+    @IBOutlet var shippingMethodPicker: UIPickerView!
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -104,6 +98,22 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         shippingSpeedTextField.text = interactor?.shippingMethods[row]
     }
+    
+    //Configure Expiration Picker
+    
+    @IBOutlet var expirationDatePicker: UIDatePicker!
+    
+    @IBAction func expirationDatePickerValueChanged(_ sender: Any) {
+        
+        let date = expirationDatePicker.date
+        let request = CreateOrder.FormatExpirationDate.Request(date: date)
+        interactor?.formatExpirationDate(request: request)
+    }
+    func configurePickers () {
+        shippingSpeedTextField.inputView = shippingMethodPicker
+        expirationTextField.inputView = expirationDatePicker
+    }
+    
     //Textfields
     @IBOutlet var textFields: [UITextField]!
     
@@ -157,16 +167,5 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
     @IBOutlet weak var billingStateTextField: UITextField!
     @IBOutlet weak var billingZipcodeTextField: UITextField!
     
-    //Pickers
-    @IBOutlet var shippingMethodPicker: UIPickerView!
-    
-    @IBOutlet var expirationDatePicker: UIDatePicker!
-    
-    @IBAction func expirationDatePickerValueChanged(_ sender: Any) {
-        
-//        let date = expirationDatePicker.date
-//        let request = CreateOrder.FormatExpirationDate.Request(date: date)
-//        interactor?.formatExpirationDate(request)
-    }
     
 }
