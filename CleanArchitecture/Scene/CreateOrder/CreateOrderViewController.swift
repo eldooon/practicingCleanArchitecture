@@ -71,6 +71,7 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
     {
         super.viewDidLoad()
         doSomething()
+        configurePickers()
     }
     
     // MARK: Do something
@@ -87,6 +88,11 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
     func displaySomething(viewModel: CreateOrder.Something.ViewModel)
     {
         //nameTextField.text = viewModel.name
+    }
+    
+    //Configure Pickers
+    func configurePickers () {
+        self.shippingSpeedTextField.inputView = shippingMethodPicker
     }
     
     //Textfields
