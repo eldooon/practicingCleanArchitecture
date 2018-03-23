@@ -40,6 +40,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="6C2-8z-hCC"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -64,6 +67,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="For-rG-Avi"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -88,6 +94,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="dTe-8O-Ukr"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -116,6 +125,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="1E8-hg-rdG"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -140,6 +152,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="37w-sz-P4q"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -164,6 +179,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="eW2-D7-kqC"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -188,6 +206,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="GjA-jC-SQs"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -212,6 +233,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="rih-U5-k73"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -240,6 +264,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="vV0-fQ-AWF"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -268,6 +295,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="PMq-An-kkC"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -292,6 +322,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="X2d-aB-iZV"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -316,6 +349,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="4ly-Bc-g0v"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -365,6 +401,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="grr-Vg-1kn"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -389,6 +428,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="6ZL-E1-7Kh"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -413,6 +455,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="pQ8-ca-Y7J"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -437,6 +482,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="En0-gb-Rm6"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -461,6 +509,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="EzW-hH-aTt" id="JpS-5t-YBc"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -496,12 +547,32 @@
                         <outlet property="shippingStreet1TextField" destination="D7E-Iy-SMq" id="xq6-Qh-J9t"/>
                         <outlet property="shippingStreet2TextField" destination="ywa-d2-5hE" id="Pwh-vo-bsx"/>
                         <outlet property="shippingZipcodeTextfield" destination="Jw8-um-bF5" id="bMn-iX-Plb"/>
+                        <outletCollection property="textFields" destination="9nv-3m-jGP" collectionClass="NSMutableArray" id="Sz6-VV-yOh"/>
+                        <outletCollection property="textFields" destination="1as-tv-JJT" collectionClass="NSMutableArray" id="N9j-8T-K5g"/>
+                        <outletCollection property="textFields" destination="75E-OP-uaD" collectionClass="NSMutableArray" id="fkw-9b-f7v"/>
+                        <outletCollection property="textFields" destination="D7E-Iy-SMq" collectionClass="NSMutableArray" id="9sv-WJ-0wJ"/>
+                        <outletCollection property="textFields" destination="ywa-d2-5hE" collectionClass="NSMutableArray" id="JGg-3B-2mb"/>
+                        <outletCollection property="textFields" destination="Z1S-2U-PPf" collectionClass="NSMutableArray" id="y0U-pf-FDI"/>
+                        <outletCollection property="textFields" destination="Jw8-um-bF5" collectionClass="NSMutableArray" id="Ews-cZ-5pK"/>
+                        <outletCollection property="textFields" destination="qdk-uG-Pcc" collectionClass="NSMutableArray" id="Xor-UH-pHj"/>
+                        <outletCollection property="textFields" destination="0ag-Tl-tKn" collectionClass="NSMutableArray" id="kjN-HB-Aky"/>
+                        <outletCollection property="textFields" destination="KLJ-nA-wfH" collectionClass="NSMutableArray" id="Dny-k7-Ndg"/>
+                        <outletCollection property="textFields" destination="Obn-gb-msr" collectionClass="NSMutableArray" id="11V-v5-KTx"/>
+                        <outletCollection property="textFields" destination="Zx8-dW-D6E" collectionClass="NSMutableArray" id="E9j-LD-3Hs"/>
+                        <outletCollection property="textFields" destination="vXa-WD-2hq" collectionClass="NSMutableArray" id="0H2-ka-IMD"/>
+                        <outletCollection property="textFields" destination="v8o-0t-qcr" collectionClass="NSMutableArray" id="7lz-Ij-u77"/>
+                        <outletCollection property="textFields" destination="6tW-p2-11p" collectionClass="NSMutableArray" id="aZg-mZ-Nyp"/>
+                        <outletCollection property="textFields" destination="BdO-qf-nHF" collectionClass="NSMutableArray" id="DGV-b4-ul3"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8o-6X-oCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pickerView contentMode="scaleToFill" id="c8D-x9-Kcq">
                     <rect key="frame" x="0.0" y="0.0" width="423" height="175"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="dataSource" destination="EzW-hH-aTt" id="71H-iT-7to"/>
+                        <outlet property="delegate" destination="EzW-hH-aTt" id="KSH-PX-h8F"/>
+                    </connections>
                 </pickerView>
                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="ol2-VT-3EQ">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
