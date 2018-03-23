@@ -118,7 +118,6 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
     @IBOutlet var textFields: [UITextField]!
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("TEST TEST TEST")
         textField.resignFirstResponder()
         if let index = textFields.index(of: textField) {
             if index < textFields.count - 1 {
