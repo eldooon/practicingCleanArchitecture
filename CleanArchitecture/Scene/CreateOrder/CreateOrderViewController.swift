@@ -104,6 +104,16 @@ class CreateOrderViewController: UITableViewController, CreateOrderDisplayLogic,
         return true
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) {
+            for textField in textFields {
+                if textField.isDescendant(of: cell) {
+                    textField.becomeFirstResponder()
+                }
+            }
+        }
+    }
+    
     //Customer Contact Info
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
